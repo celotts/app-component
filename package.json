@@ -9,7 +9,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "eslint": "./node_modules/.bin/eslint ./src --max-warnings=0",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "analyze": "npx webpack-bundle-analyzer dist/pago-productos-web-app/stats.json"
+		
   },
   "private": true,
   "dependencies": {
