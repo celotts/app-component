@@ -14,6 +14,11 @@ export class PaginaPadreComponent implements OnInit {
 			edad: '23'
 		};
 	}
+
+	getData() {
+		return JSON.stringify(this.data);
+	}
+
 	procesaSaludos(mensaje) {
 		alert(mensaje);
 		if (mensaje !== '') {

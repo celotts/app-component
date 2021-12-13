@@ -11,7 +11,7 @@ export class PaginaHijoComponent {
 	cantidad = 1;
 	@Output() dataHijoChange = new EventEmitter<string>();
 	saludar() {
-		this.dataHijoChange.emit('Hola desde pagina hija, cantidad de veces: ' + this.cantidad);
+		this.dataHijoChange.emit('Envio saludos --> Hola desde pagina hija, cantidad de veces: ' + this.cantidad);
 		this.cantidad++;
 	}
 }

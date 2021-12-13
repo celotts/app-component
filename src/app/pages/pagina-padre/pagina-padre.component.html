@@ -1,0 +1,15 @@
+<!-- Componente Padre-->
+<div class="container">
+    <div class="card m-5 border-primary" style="width: 18rem;">
+        <h1 class="pl-5 text-primary">Página Padre!</h1>
+        <h3 class="pl-5 text-primary">Envia los datos --> {{getData()}} --> al Hijo</h3>
+        <p class="mb-5 pl-5">
+            {{ respuesta }}
+        </p>
+        <!-- Etiqueta componente hijo --> 
+        <!-- @Input [dataHijo]=data -->
+        <!-- @Output (dataHijoChange)="procesaSaludos($event)" -->  
+        <app-pagina-hijo [dataHijo]=data (dataHijoChange)="procesaSaludos($event)"></app-pagina-hijo>
+        <!-- Fin Etiqueta componente hijo-->
+    </div>
+</div>
